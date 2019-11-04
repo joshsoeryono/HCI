@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>Image</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="css/flexslider.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="css/line-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="css/elegant-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="css/theme-1.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all"/>
+        <!--[if gte IE 9]>
+        	<link rel="stylesheet" type="text/css" href="css/ie9.css" />
+		<![endif]-->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700%7CRaleway:700' rel='stylesheet' type='text/css'>
+        <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <link href="http://fonts.googleapis.com/css?family=Cardo:400,400italic" rel="stylesheet" type="text/css">
+        <link href="css/font-cardo.css" rel="stylesheet" type="text/css">
+        <script src="js/kaleidoscope.min.js"></script>
+    </head>
+
+    <body>
+    	<div class="loader">
+    		<div class="spinner">
+			  <div class="double-bounce1"></div>
+			  <div class="double-bounce2"></div>
+			</div>
+    	</div>
+				
+		<div class="nav-container">
+			<nav class="centered-logo top-bar">
+				<div class="container">
+				
+					
+					
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<a href="home.html"></a>
+							<img class="logo logo-dark" alt="Logo" src="img/logotype_dark1.png">
+						</div>
+					</div>
+				
+				
+					<div class="row nav-menu">
+					
+						<div class="col-sm-12 columns text-center">
+							<ul class="menu">
+								<a></a><li><a href="home.html" target="_self">Home</a></li><li><a href="image.html" target="_self">Image</a></li><li><a href="animation.html" target="_self">Animation</a></li><li><a href="music.html" target="_self">Music</a></li><li><a href="video.html" target="_self">Video</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="mobile-toggle">
+						<i class="icon icon_menu"></i>
+					</div>
+					
+				</div>
+				<div class="bottom-border"></div>
+			</nav>
+
+		</div>
+
+		<div class="main-container">
+			<section class="mani" id="mani">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h2>Image Manipulation</h2>
+							<hr>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-sm-4">
+							<a>
+								<figure>
+									<img src="img/image1.jpg">
+									<figcaption>Original Photo of Somi</figcaption>
+								</figure>
+							</a>
+							<a href="grayscale.html" target="_blank" class="btn btn-primary btn-filled inner-link" target="_self">Grayscale</a>
+							<a href="blur.html" target="_blank" class="btn btn-primary btn-filled inner-link" target="_self">Blur</a>
+							<br></br>
+							<a href="invert.html" target="_blank" class="btn btn-primary btn-filled inner-link" target="_self">Invert</a>
+						</div>
+					</div>
+
+				</div>
+			</section>
+		</div>
+        <br>
+        <h1 class="center" style="font-size: 42px; text-align: center;">My Photo when I was in Facebook HQ (360, grayscaled)</h1 class="center" style="font-size: 42px; text-align: center;">
+        <div id="photo360" style="margin-left: 200px; filter:grayscale(100%);"></div>
+        <br>
+
+        <script>
+            (function() {
+                var viewer = new Kaleidoscope.Image({
+                    source: 'img/main_image3.jpg',
+                    containerId: '#photo360',
+                    height: window.innerHeight-250,
+                    width: window.innerWidth-400,
+                });
+                viewer.render();
+
+                window.onresize = function() {
+                    viewer.setSize({height: window.innerHeight, width: window.innerWidth});
+                };
+            })();
+        </script>
+		<div class="footer-container">
+					
+			
+		
+			
+		
+			
+		
+			
+		
+			<footer class="short bg-secondary-1">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<ul class="social-icons">
+								<li>
+									<a href="https://www.instagram.com/somsomi0309/?hl=en" target="_blank">
+										<i class="icon social_instagram"></i>
+									</a>
+								</li>
+								
+								<li>
+									<a href="https://www.youtube.com/channel/UCg8ZzloDPTrOiGztK0C9txQ" target="_blank">
+										<i class="icon social_youtube"></i>
+									</a>
+								</li>
+							</ul>
+							<br>
+							<br>
+							<br>
+							<font color="a87f97">© Copyright 2019 All About Somi made by Josh</font>.</span>
+							
+							
+							
+						</div>
+						
+						
+					</div>
+				</div>
+			</footer>
+		</div>
+				
+		<script src="https://www.youtube.com/iframe_api"></script>
+		<script src="js/jquery.min.js"></script>
+        <script src="js/jquery.plugin.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.flexslider-min.js"></script>
+        <script src="js/smooth-scroll.min.js"></script>
+        <script src="js/skrollr.min.js"></script>
+        <script src="js/spectragram.min.js"></script>
+        <script src="js/scrollReveal.min.js"></script>
+        <script src="js/isotope.min.js"></script>
+        <script src="js/twitterFetcher_v10_min.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script src="js/jquery.countdown.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
+				
